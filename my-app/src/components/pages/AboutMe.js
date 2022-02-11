@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.css";
 import Sidebar from "./Sidebar.js";
 import Skills from "./Skills.js";
+import SocialLink from "./SocialLinks";
 
 export default function Home() {
   return (
@@ -24,34 +25,7 @@ export default function Home() {
             the internet!
           </p>
           <div className="social-icons">
-            <a
-              className="social-icon"
-              href="https://www.linkedin.com/in/valerii-bihun-8b0450217/"
-              target="_blank"
-            >
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a
-              className="social-icon"
-              href="https://github.com/Valllerian"
-              target="_blank"
-            >
-              <i className="fab fa-github"></i>
-            </a>
-            <a
-              className="social-icon"
-              href="https://twitter.com/VallerianCRPT"
-              target="_blank"
-            >
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a
-              className="social-icon"
-              href="https://www.facebook.com/profile.php?id=100013709264704"
-              target="_blank"
-            >
-              <i className="fab fa-facebook-f"></i>
-            </a>
+          <SocialLink/>
           </div>
         </div>
       </section>
