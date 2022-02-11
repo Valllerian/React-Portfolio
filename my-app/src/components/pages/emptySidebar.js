@@ -1,5 +1,6 @@
 import "./styles.css";
 import Avatar from "../../assets/profile.jpg";
+import Resume from "../../assets/ValeriiBihunResume.pdf";
 
 const EmptySidebar = () => {
  
@@ -34,7 +35,7 @@ const EmptySidebar = () => {
             <li className="nav-item">
               <a
                 className="nav-link js-scroll-trigger"
-                href="./src/assets/ValeriiBihunResume.pdf"
+                href={Resume}
               >
                 Get my Resume!
               </a>
