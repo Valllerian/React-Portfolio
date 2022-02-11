@@ -1,8 +1,4 @@
-
-import React from 'react';
-
-
-// TODO: Add a comment explaining how we are able to extract the key value pairs from props
+import React from "react";
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
@@ -10,17 +6,19 @@ function NavTabs({ currentPage, handlePageChange }) {
       <li className="nav-item">
         <a
           href="#home"
-          onClick={() => handlePageChange('AboutMe')}
-          className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}
+          onClick={() => handlePageChange("AboutMe")}
+          className={currentPage === "AboutMe" ? "nav-link active" : "nav-link"}
         >
-         About Me
+          About Me
         </a>
       </li>
       <li className="nav-item">
         <a
           href="#blog"
-          onClick={() => handlePageChange('Portfolio')}
-          className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+          onClick={() => handlePageChange("Portfolio")}
+          className={
+            currentPage === "Portfolio" ? "nav-link active" : "nav-link"
+          }
         >
           Portfolio
         </a>
@@ -28,8 +26,8 @@ function NavTabs({ currentPage, handlePageChange }) {
       <li className="nav-item">
         <a
           href="#contact"
-          onClick={() => handlePageChange('Contact')}
-          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+          onClick={() => handlePageChange("Contact")}
+          className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
         >
           Contact
         </a>
@@ -37,8 +35,8 @@ function NavTabs({ currentPage, handlePageChange }) {
       <li className="nav-item">
         <a
           href="#resume"
-          onClick={() => handlePageChange('Resume')}
-          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+          onClick={() => handlePageChange("Resume")}
+          className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
         >
           Resume
         </a>
