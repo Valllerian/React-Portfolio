@@ -21,11 +21,11 @@ export default function Portfolio() {
             />
           </span>
         </a>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav">
-            <li class="nav-item">
+        <div className="collapse navbar-collapse" id="navbarResponsive">
+          <ul className="navbar-nav">
+            <li className="nav-item">
               <a
-                class="nav-link js-scroll-trigger"
+                className="nav-link js-scroll-trigger"
                 href="./src/assets/ValeriiBihunResume.pdf"
               >
                 Get my Resume!

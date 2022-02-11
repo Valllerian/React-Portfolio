@@ -1,77 +1,9 @@
 import React from "react";
 import "./styles.css";
 import Sidebar from "./Sidebar.js";
+import Skills from "./Skills.js";
 
 export default function Home() {
-  const languageIcons = [
-    {
-      id: 1,
-      ref: "fab fa-html5",
-    },
-    {
-      id: 2,
-      ref: "fab fa-css3-alt5",
-    },
-    {
-      id: 3,
-      ref: "devicon-javascript-plain",
-    },
-  ];
-
-  const frameworkIcons = [
-    {
-      id: 1,
-      ref: "devicon-jquery-plain",
-    },
-    {
-      id: 2,
-      ref: "devicon-express-original",
-    },
-    {
-      id: 3,
-      ref: "fab fa-react",
-    },
-    {
-      id: 4,
-      ref: "fab fa-node-js",
-    },
-    {
-      id: 5,
-      ref: "fab fa-wordpress",
-    },
-    {
-      id: 6,
-      ref: "fab fa-npm",
-    },
-    {
-      id: 7,
-      ref: "devicon-git-plain",
-    },
-    {
-      id: 8,
-      ref: "devicon-bootstrap-plain",
-    },
-    {
-      id: 9,
-      ref: "devicon-mysql-plain",
-    },
-    {
-      id: 10,
-      ref: "devicon-sequelize-plain",
-    },
-    {
-      id: 11,
-      ref: "devicon-handlebars-plain",
-    },
-  ];
-
-  const applicationIcons = [
-    {
-      id: 1,
-      ref: "devicon-visualstudio-plain"
-    }
-  ];
-
   return (
     <div>
       <Sidebar />
@@ -97,28 +29,28 @@ export default function Home() {
               href="https://www.linkedin.com/in/valerii-bihun-8b0450217/"
               target="_blank"
             >
-              <i class="fab fa-linkedin-in"></i>
+              <i className="fab fa-linkedin-in"></i>
             </a>
             <a
               className="social-icon"
               href="https://github.com/Valllerian"
               target="_blank"
             >
-              <i class="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </a>
             <a
               className="social-icon"
               href="https://twitter.com/VallerianCRPT"
               target="_blank"
             >
-              <i class="fab fa-twitter"></i>
+              <i className="fab fa-twitter"></i>
             </a>
             <a
               className="social-icon"
               href="https://www.facebook.com/profile.php?id=100013709264704"
               target="_blank"
             >
-              <i class="fab fa-facebook-f"></i>
+              <i className="fab fa-facebook-f"></i>
             </a>
           </div>
         </div>
@@ -188,39 +120,7 @@ export default function Home() {
       <hr className="m-0" />
 
       <section className="resume-section" id="skills">
-        <div className="resume-section-content">
-          <h2 className="mb-5">Skills</h2>
-          <div className="subheading mb-3">Languages:</div>
-          <ul className="list-inline dev-icons">
-          {languageIcons.map((language) => (
-            <li className="list-inline-item" key={language.id}>
-            <i className={language.ref}></i>
-          </li>
-          ))};
-          </ul>
-          <p>HTML5, CSS3, JavaScript;</p>
-          <div class="subheading mb-3">Frameworks:</div>
-          <ul class="list-inline dev-icons">
-          {frameworkIcons.map((framework) => (
-            <li className="list-inline-item" key={framework.id}>
-            <i className={framework.ref}></i>
-          </li>
-          ))};
-          </ul>
-          <p>
-            jQuery, Express, React, Node, Wordpress, NPM, Bootstrap, MySQL,
-            Sequelize, Handlebars;
-          </p>
-          <div className="subheading mb-3">Applications:</div>
-          <ul className="list-inline dev-icons">
-          {applicationIcons.map((application) => (
-            <li className="list-inline-item" key={application.id}>
-            <i className={application.ref}></i>
-          </li>
-          ))};
-          </ul>
-          <p>Visual Studio;</p>
-        </div>
+        <Skills />
       </section>
     </div>
   );

@@ -13,17 +13,17 @@ export default function Contact() {
           <span className="d-block d-lg-none">Valerii Bihun</span>
           <span className="d-none d-lg-block">
             <img
-              class="img-fluid img-profile rounded-circle mx-auto mb-2"
+              className="img-fluid img-profile rounded-circle mx-auto mb-2"
               src={Avatar}
               alt="..."
             />
           </span>
         </a>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav">
-            <li class="nav-item">
+        <div className="collapse navbar-collapse" id="navbarResponsive">
+          <ul className="navbar-nav">
+            <li className="nav-item">
               <a
-                class="nav-link js-scroll-trigger"
+                className="nav-link js-scroll-trigger"
                 href="./src/assets/ValeriiBihunResume.pdf"
               >
                 Get my Resume!
@@ -53,28 +53,28 @@ export default function Contact() {
               href="https://www.linkedin.com/in/valerii-bihun-8b0450217/"
               target="_blank"
             >
-              <i class="fab fa-linkedin-in"></i>
+              <i className="fab fa-linkedin-in"></i>
             </a>
             <a
               className="social-icon"
               href="https://github.com/Valllerian"
               target="_blank"
             >
-              <i class="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </a>
             <a
               className="social-icon"
               href="https://twitter.com/VallerianCRPT"
               target="_blank"
             >
-              <i class="fab fa-twitter"></i>
+              <i className="fab fa-twitter"></i>
             </a>
             <a
               className="social-icon"
               href="https://www.facebook.com/profile.php?id=100013709264704"
               target="_blank"
             >
-              <i class="fab fa-facebook-f"></i>
+              <i className="fab fa-facebook-f"></i>
             </a>
           </div>
         </div>

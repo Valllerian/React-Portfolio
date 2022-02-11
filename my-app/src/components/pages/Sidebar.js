@@ -26,14 +26,14 @@ const Sidebar = ({}) => {
   ];
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+      className=" navbar navbar-expand-lg navbar-dark  bg-primary fixed-top"
       id="sideNav"
     >
       <a className="navbar-brand js-scroll-trigger" href="#about">
         <span className="d-block d-lg-none">Valerii Bihun</span>
         <span className="d-none d-lg-block">
           <img
-            class="img-fluid img-profile rounded-circle mx-auto mb-2"
+            className="img-fluid img-profile rounded-circle mx-auto mb-2"
             src={Avatar}
             alt="..."
           />
