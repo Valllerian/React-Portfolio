@@ -97,13 +97,6 @@ hr {
   opacity: 0.25;
 }
 
-.stickyFooter {
-  position: sticky;
-  position: -webkit-sticky;
-  bottom: 0;
-  z-index: 1;
-  
-}
 
 hr:not([size]) {
   height: 1px;

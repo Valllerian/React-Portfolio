@@ -7,10 +7,10 @@ export default function Footer  () {
       };
       
   return (
-    <div className="footer ">
-      <footer className = 'stickyFooter'>
+    <div className="footer">
+      <footer >
         <div
-          className="text-center p-3"
+          className="text-center p-3 r"
           style={footerStyle}
         >
           © 2022 Copyright: 
