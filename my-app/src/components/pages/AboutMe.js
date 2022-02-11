@@ -7,15 +7,16 @@ export default function Home() {
     <div>
  
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a className="navbar-brand js-scroll-trigger" href="#page-top">
+            <a className="navbar-brand js-scroll-trigger" href="#about">
                 <span className="d-block d-lg-none">Valerii Bihun</span>
                 <span className="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src= { Avatar} alt="..." /></span>
             </a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
                 <ul className="navbar-nav">
-                    <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    
                     <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     
@@ -43,7 +44,9 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-           
+
+            <hr className="m-0" />
+
             <section className="resume-section" id="interests">
                 <div className="resume-section-content">
                     <h2 className="mb-5">Interests</h2>
@@ -51,6 +54,8 @@ export default function Home() {
                     <p className="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, spend some time gaming and browsing the web. I tend to spend a large amount of my free time coding as I am still learning and developing my skills!</p>
                 </div>
             </section>
+
+            <hr className="m-0" />
 
             <section className="resume-section" id="education">
                 <div className="resume-section-content">
@@ -83,6 +88,8 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+            <hr className="m-0" />
 
             <section className="resume-section" id="skills">
                 <div className="resume-section-content">
