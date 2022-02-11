@@ -1,61 +1,80 @@
 import React from "react";
 import "./styles.css";
-import Avatar from "../../assets/profile.jpg";
+import Sidebar from "./Sidebar.js";
 
 export default function Home() {
+  const languageIcons = [
+    {
+      id: 1,
+      ref: "fab fa-html5",
+    },
+    {
+      id: 2,
+      ref: "fab fa-css3-alt5",
+    },
+    {
+      id: 3,
+      ref: "devicon-javascript-plain",
+    },
+  ];
+
+  const frameworkIcons = [
+    {
+      id: 1,
+      ref: "devicon-jquery-plain",
+    },
+    {
+      id: 2,
+      ref: "devicon-express-original",
+    },
+    {
+      id: 3,
+      ref: "fab fa-react",
+    },
+    {
+      id: 4,
+      ref: "fab fa-node-js",
+    },
+    {
+      id: 5,
+      ref: "fab fa-wordpress",
+    },
+    {
+      id: 6,
+      ref: "fab fa-npm",
+    },
+    {
+      id: 7,
+      ref: "devicon-git-plain",
+    },
+    {
+      id: 8,
+      ref: "devicon-bootstrap-plain",
+    },
+    {
+      id: 9,
+      ref: "devicon-mysql-plain",
+    },
+    {
+      id: 10,
+      ref: "devicon-sequelize-plain",
+    },
+    {
+      id: 11,
+      ref: "devicon-handlebars-plain",
+    },
+  ];
+
+  const applicationIcons = [
+    {
+      id: 1,
+      ref: "devicon-visualstudio-plain"
+    }
+  ];
+
   return (
     <div>
-      <nav
-        className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
-        id="sideNav"
-      >
-        <a className="navbar-brand js-scroll-trigger" href="#about">
-          <span className="d-block d-lg-none">Valerii Bihun</span>
-          <span className="d-none d-lg-block">
-            <img
-              class="img-fluid img-profile rounded-circle mx-auto mb-2"
-              src={Avatar}
-              alt="..."
-            />
-          </span>
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarResponsive">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#about">
-                About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#interests">
-                Interests
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#education">
-                Education
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#skills">
-                Skills
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
+      <Sidebar />
       <section className="resume-section" id="about">
         <div className="resume-section-content">
           <h1 className="mb-0">
@@ -173,52 +192,20 @@ export default function Home() {
           <h2 className="mb-5">Skills</h2>
           <div className="subheading mb-3">Languages:</div>
           <ul className="list-inline dev-icons">
-            <li className="list-inline-item">
-              <i className="fab fa-html5"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-css3-alt"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicon-javascript-plain"></i>
-            </li>
+          {languageIcons.map((language) => (
+            <li className="list-inline-item" key={language.id}>
+            <i className={language.ref}></i>
+          </li>
+          ))};
           </ul>
           <p>HTML5, CSS3, JavaScript;</p>
           <div class="subheading mb-3">Frameworks:</div>
           <ul class="list-inline dev-icons">
-            <li className="list-inline-item">
-              <i className="devicon-jquery-plain"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicon-express-original"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-react"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-node-js"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-wordpress"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-npm"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicon-git-plain"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicon-bootstrap-plain"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicon-mysql-plain"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicon-sequelize-plain"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicon-handlebars-plain"></i>
-            </li>
+          {frameworkIcons.map((framework) => (
+            <li className="list-inline-item" key={framework.id}>
+            <i className={framework.ref}></i>
+          </li>
+          ))};
           </ul>
           <p>
             jQuery, Express, React, Node, Wordpress, NPM, Bootstrap, MySQL,
@@ -226,9 +213,11 @@ export default function Home() {
           </p>
           <div className="subheading mb-3">Applications:</div>
           <ul className="list-inline dev-icons">
-            <li className="list-inline-item">
-              <i className="devicon-visualstudio-plain"></i>
-            </li>
+          {applicationIcons.map((application) => (
+            <li className="list-inline-item" key={application.id}>
+            <i className={application.ref}></i>
+          </li>
+          ))};
           </ul>
           <p>Visual Studio;</p>
         </div>

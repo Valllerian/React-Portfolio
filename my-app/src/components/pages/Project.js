@@ -1,4 +1,4 @@
-import { useContext } from "react";
+
 import "./styles.css";
 
 const Project = ({ title, tech, description, deployedApp, gitHub, img }) => {
