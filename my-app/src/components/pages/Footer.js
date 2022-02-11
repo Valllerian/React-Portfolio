@@ -1,4 +1,5 @@
 import "./styles.css";
+import SocialLink from "./SocialLinks";
 
 export default function Footer  () {
 
@@ -13,10 +14,10 @@ export default function Footer  () {
           className="text-center p-3 r"
           style={footerStyle}
         >
-          © 2022 Copyright: 
-          <a className="text-white" href="https://github.com/Valllerian" style={{color: 'red'}}>
-             Valerii Bihun
-          </a>
+             
+              <div className="social-icons">
+              <SocialLink/>
+          </div>
         </div>
       </footer>
     </div>

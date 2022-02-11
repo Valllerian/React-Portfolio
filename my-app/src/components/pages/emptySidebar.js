@@ -3,6 +3,24 @@ import Avatar from "../../assets/profile.jpg";
 import Resume from "../../assets/ValeriiBihunResume.pdf";
 
 const EmptySidebar = () => {
+  const sidebarOptions = [
+    {
+      id: 1,
+      title: "Education",
+      href: "#education",
+    },
+    {
+      id: 2,
+      title: "Skills",
+      href: "#skills",
+    },
+    {
+      id: 3,
+      title: "Get my Resume!",
+      href: Resume,
+    }
+  
+  ];
  
   return (
     <nav
@@ -32,14 +50,14 @@ const EmptySidebar = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarResponsive">
       <ul className="navbar-nav">
-            <li className="nav-item">
-              <a
-                className="nav-link js-scroll-trigger"
-                href={Resume}
-              >
-                Get my Resume!
+      {sidebarOptions.map((sidebarLine) => (
+            <li className="nav-item" key={sidebarLine.id}>
+              <a className="nav-link js-scroll-trigger" href={sidebarLine.href}>
+                {sidebarLine.title}
               </a>
             </li>
+          ))};
+            
           </ul>
       </div>
     </nav>

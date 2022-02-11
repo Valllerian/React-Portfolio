@@ -1,20 +1,40 @@
 import "./styles.css";
 import Avatar from "../../assets/profile.jpg";
 
-const Sidebar = ({}) => {
+const ProjectSidebar = () => {
   const sidebarOptions = [
     {
       id: 1,
-      title: "About",
-      href: "#about",
+      title: "Weather Dashboard",
+      href: "#1",
     },
     {
       id: 2,
-      title: "Interests",
-      href: "#interests",
-    }
-  
+      title: "Note Taker",
+      href: "#2",
+    },
+    {
+      id: 3,
+      title: "Planner",
+      href: "#3",
+    },
+    {
+      id: 4,
+      title: "Profile Generator",
+      href: "#4",
+    },
+    {
+      id: 5,
+      title: "E-Commerce Back End",
+      href: "#5",
+    },
+    {
+      id: 6,
+      title: "NHL Database",
+      href: "#6",
+    },
   ];
+
   return (
     <nav
       className=" navbar navbar-expand-lg navbar-dark  bg-primary fixed-top"
@@ -49,11 +69,12 @@ const Sidebar = ({}) => {
                 {sidebarLine.title}
               </a>
             </li>
-          ))};
+          ))}
+          ;
         </ul>
       </div>
     </nav>
   );
 };
 
-export default Sidebar;
+export default ProjectSidebar;
