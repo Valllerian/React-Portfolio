@@ -21,24 +21,39 @@ Current project has been saved in my personal GitHub repository and is currently
 
 https://github.com/Valllerian/Updated-Portfolio
 ## Usage
-Websites includes some usable links to navigate through content as well as a button to download a resume:
+
+Websites includes some usable links to navigate through content on the top navbar;
 
 <br>
-<img alt="Header of the website" src="./dist/assets/img/ReadMe01.jpg" />
+<img alt="NavBar of the website" src="./my-app/assets/ReadMe01.jpg" />
 <br>
 
-Project section includes some info about all of the recent projects, technology used and a quick description.
-Each section includes links to the deployed application and GitHub repo.
+Sidebar has an Avatar and navigation through topic on the page;
 
 <br>
-<img alt="Project screenshots" src="./dist/assets/img/ReadMe02.jpg" />
+<img alt="Navigation" src="./my-app/assets/ReadMe02.jpg" />
 <br>
 
-"Contact me" section is located on the bottom of the page. There are active buttons that direct us to different social platforms as well as a send email button.
+
+"Contact me" section has the form that sends an email with users message;
 
 <br>
-<img alt="page footer with socials" src="./dist/assets/img/ReadMe03.jpg" />
+<img alt="Contact page" src="./my-app/assets/ReadMe03.jpg" />
 <br>
+
+
+"Resume" section has education and skills;
+
+<br>
+<img alt="Resume section" src="./my-app/assets/ReadMe04.jpg" />
+<br>
+
+Footer of the page with social links;
+
+<br>
+<img alt="Footer" src="./my-app/assets/ReadMe05.jpg" />
+<br>
+
 
 
 
