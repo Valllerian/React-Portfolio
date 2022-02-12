@@ -1,4 +1,4 @@
-import "./styles.css";
+import "../styles.css";
 
 const Project = ({ id,title, tech, description, deployedApp, gitHub, img }) => {
   return (

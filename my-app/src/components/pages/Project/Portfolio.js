@@ -1,8 +1,8 @@
 import React from "react";
-import "./styles.css";
+import "../styles.css";
 import Project from "./Project.js";
 import { projects } from "./projects.js";
-import ProjectSidebar from "./ProjectSidebar.js";
+import ProjectSidebar from "../Sidebar/ProjectSidebar.js";
 
 
 export default function Portfolio() {

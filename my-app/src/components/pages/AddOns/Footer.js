@@ -1,4 +1,4 @@
-import "./styles.css";
+import "../styles.css";
 import SocialLink from "./SocialLinks";
 
 export default function Footer  () {
@@ -14,7 +14,6 @@ export default function Footer  () {
           className="text-center p-3 r"
           style={footerStyle}
         >
-             
               <div className="social-icons">
               <SocialLink/>
           </div>

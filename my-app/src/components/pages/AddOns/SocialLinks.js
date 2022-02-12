@@ -1,4 +1,4 @@
-import "./styles.css";
+import "../styles.css";
 const SocialLink = () => {
   const socials = [
     {

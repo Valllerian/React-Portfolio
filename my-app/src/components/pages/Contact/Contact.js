@@ -1,6 +1,6 @@
 import React from "react";
-import "./styles.css";
-import ContactSidebar from "./ContactSidebar";
+import "../styles.css";
+import ContactSidebar from "../Sidebar/ContactSidebar";
 
 // Importing State:
 import { useRef, useState } from "react";

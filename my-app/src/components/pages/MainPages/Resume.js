@@ -1,6 +1,6 @@
 import React from "react";
-import "./styles.css";
-import EmptySidebar from "./emptySidebar.js";
+import "../styles.css";
+import EmptySidebar from "../Sidebar/emptySidebar.js";
 import Skills from "./Skills.js";
 
 

@@ -1,20 +1,12 @@
-import "./styles.css";
-import Avatar from "../../assets/profile.jpg";
+import "../styles.css";
+import Avatar from "../../../assets/profile.jpg";
 
-const Sidebar = ({}) => {
+
+const ContactSidebar = () => {
+    // add sidebar options if needed:
   const sidebarOptions = [
-    {
-      id: 1,
-      title: "About",
-      href: "#about",
-    },
-    {
-      id: 2,
-      title: "Interests",
-      href: "#interests",
-    }
-  
   ];
+ 
   return (
     <nav
       className=" navbar navbar-expand-lg navbar-dark  bg-primary fixed-top"
@@ -42,18 +34,20 @@ const Sidebar = ({}) => {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarResponsive">
-        <ul className="navbar-nav">
-          {sidebarOptions.map((sidebarLine) => (
+      <ul className="navbar-nav">
+          {/* Uncomment for a sidebar generation */}
+      {/* {sidebarOptions.map((sidebarLine) => (
             <li className="nav-item" key={sidebarLine.id}>
               <a className="nav-link js-scroll-trigger" href={sidebarLine.href}>
                 {sidebarLine.title}
               </a>
             </li>
-          ))};
-        </ul>
+          ))}; */}
+            
+          </ul>
       </div>
     </nav>
   );
 };
 
-export default Sidebar;
+export default ContactSidebar;

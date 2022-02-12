@@ -1,6 +1,6 @@
-import "./styles.css";
-import Avatar from "../../assets/profile.jpg";
-import Resume from "../../assets/ValeriiBihunResume.pdf";
+import "../styles.css";
+import Avatar from "../../../assets/profile.jpg";
+import Resume from "../../../assets/ValeriiBihunResume.pdf";
 
 const EmptySidebar = () => {
   const sidebarOptions = [

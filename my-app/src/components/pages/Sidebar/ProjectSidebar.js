@@ -1,5 +1,5 @@
-import "./styles.css";
-import Avatar from "../../assets/profile.jpg";
+import "../styles.css";
+import Avatar from "../../../assets/profile.jpg";
 
 const ProjectSidebar = () => {
   const sidebarOptions = [
