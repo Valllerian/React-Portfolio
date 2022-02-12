@@ -8,7 +8,7 @@ const Skills = ({}) => {
     },
     {
       id: 2,
-      ref: "fab fa-css3-alt5",
+      ref: "devicon-css3-plain",
     },
     {
       id: 3,
@@ -79,7 +79,7 @@ const Skills = ({}) => {
             <i className={language.ref}></i>
           </li>
         ))}
-        ;
+        
       </ul>
       <p>HTML5, CSS3, JavaScript;</p>
       <div className="subheading mb-3">Frameworks:</div>
@@ -89,7 +89,7 @@ const Skills = ({}) => {
             <i className={framework.ref}></i>
           </li>
         ))}
-        ;
+        
       </ul>
       <p>
         jQuery, Express, React, Node, Wordpress, NPM, Bootstrap, MySQL,
@@ -102,7 +102,7 @@ const Skills = ({}) => {
             <i className={application.ref}></i>
           </li>
         ))}
-        ;
+        
       </ul>
       <p>Visual Studio;</p>
     </div>
