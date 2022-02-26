@@ -25,33 +25,33 @@ https://github.com/Valllerian/Updated-Portfolio
 Websites includes some usable links to navigate through content on the top navbar;
 
 <br>
-<img alt="NavBar of the website" src="./my-app/assets/ReadMe01.jpg" />
+<img alt="NavBar of the website" src="./assets/ReadMe01.jpg" />
 <br>
 
 Sidebar has an Avatar and navigation through topic on the page;
 
 <br>
-<img alt="Navigation" src="./my-app/assets/ReadMe02.jpg" />
+<img alt="Navigation" src="./assets/ReadMe02.jpg" />
 <br>
 
 
 "Contact me" section has the form that sends an email with users message;
 
 <br>
-<img alt="Contact page" src="./my-app/assets/ReadMe03.jpg" />
+<img alt="Contact page" src="./assets/ReadMe03.jpg" />
 <br>
 
 
 "Resume" section has education and skills;
 
 <br>
-<img alt="Resume section" src="./my-app/assets/ReadMe04.jpg" />
+<img alt="Resume section" src="./assets/ReadMe04.jpg" />
 <br>
 
 Footer of the page with social links;
 
 <br>
-<img alt="Footer" src="./my-app/assets/ReadMe05.jpg" />
+<img alt="Footer" src="./assets/ReadMe05.jpg" />
 <br>
 
 
