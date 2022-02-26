@@ -2,8 +2,6 @@ import React from "react";
 import "../styles.css";
 import Sidebar from "../Sidebar/Sidebar";
 
-
-
 export default function Home() {
   return (
     <div>
@@ -24,9 +22,7 @@ export default function Home() {
             Hello! My name is Valerii and I enjoy creating things that live on
             the internet!
           </p>
-          <div className="social-icons">
-          
-          </div>
+          <div className="social-icons"></div>
         </div>
       </section>
 
@@ -50,8 +46,6 @@ export default function Home() {
       </section>
 
       <hr className="m-0" />
-
-     
     </div>
   );
 }

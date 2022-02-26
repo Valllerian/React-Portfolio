@@ -1,12 +1,10 @@
 import "../styles.css";
 import Avatar from "../../../assets/profile.jpg";
 
-
 const ContactSidebar = () => {
-    // add sidebar options if needed:
-  const sidebarOptions = [
-  ];
- 
+  // add sidebar options if needed:
+  const sidebarOptions = [];
+
   return (
     <nav
       className=" navbar navbar-expand-lg navbar-dark  bg-primary fixed-top"
@@ -34,17 +32,16 @@ const ContactSidebar = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarResponsive">
-      <ul className="navbar-nav">
+        <ul className="navbar-nav">
           {/* Uncomment for a sidebar generation */}
-      {/* {sidebarOptions.map((sidebarLine) => (
+          {/* {sidebarOptions.map((sidebarLine) => (
             <li className="nav-item" key={sidebarLine.id}>
               <a className="nav-link js-scroll-trigger" href={sidebarLine.href}>
                 {sidebarLine.title}
               </a>
             </li>
           ))}; */}
-            
-          </ul>
+        </ul>
       </div>
     </nav>
   );

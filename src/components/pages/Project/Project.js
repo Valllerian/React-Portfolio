@@ -1,6 +1,14 @@
 import "../styles.css";
 
-const Project = ({ id,title, tech, description, deployedApp, gitHub, img }) => {
+const Project = ({
+  id,
+  title,
+  tech,
+  description,
+  deployedApp,
+  gitHub,
+  img,
+}) => {
   return (
     <div className="project" id={id}>
       <div className="d-flex flex-column flex-md-row justify-content-between mb-5">

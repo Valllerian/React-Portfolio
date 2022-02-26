@@ -3,14 +3,11 @@ import "../styles.css";
 import EmptySidebar from "../Sidebar/emptySidebar.js";
 import Skills from "./Skills.js";
 
-
 export default function About() {
- 
   return (
     <div>
-     
-       <EmptySidebar />
-       <section className="resume-section" id="education">
+      <EmptySidebar />
+      <section className="resume-section" id="education">
         <div className="resume-section-content">
           <h2 className="mb-5">Education</h2>
           <div className="d-flex flex-column flex-md-row justify-content-between mb-5">

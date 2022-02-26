@@ -12,8 +12,7 @@ const Sidebar = ({}) => {
       id: 2,
       title: "Interests",
       href: "#interests",
-    }
-  
+    },
   ];
   return (
     <nav
@@ -49,7 +48,8 @@ const Sidebar = ({}) => {
                 {sidebarLine.title}
               </a>
             </li>
-          ))};
+          ))}
+          ;
         </ul>
       </div>
     </nav>

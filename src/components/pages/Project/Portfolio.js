@@ -4,11 +4,10 @@ import Project from "./Project.js";
 import { projects } from "./projects.js";
 import ProjectSidebar from "../Sidebar/ProjectSidebar.js";
 
-
 export default function Portfolio() {
   return (
     <div>
-       <ProjectSidebar/>
+      <ProjectSidebar />
       <section className="resume-section" id="experience">
         <div className="resume-section-content">
           <h2 className="mb-5">Projects</h2>

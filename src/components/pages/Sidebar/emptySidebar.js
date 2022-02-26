@@ -18,10 +18,9 @@ const EmptySidebar = () => {
       id: 3,
       title: "Get my Resume!",
       href: Resume,
-    }
-  
+    },
   ];
- 
+
   return (
     <nav
       className=" navbar navbar-expand-lg navbar-dark  bg-primary fixed-top"
@@ -49,16 +48,16 @@ const EmptySidebar = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarResponsive">
-      <ul className="navbar-nav">
-      {sidebarOptions.map((sidebarLine) => (
+        <ul className="navbar-nav">
+          {sidebarOptions.map((sidebarLine) => (
             <li className="nav-item" key={sidebarLine.id}>
               <a className="nav-link js-scroll-trigger" href={sidebarLine.href}>
                 {sidebarLine.title}
               </a>
             </li>
-          ))};
-            
-          </ul>
+          ))}
+          ;
+        </ul>
       </div>
     </nav>
   );

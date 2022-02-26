@@ -10,7 +10,6 @@ import emailjs from "@emailjs/browser";
 import isEmail from "validator/lib/isEmail";
 
 export default function Contact() {
- 
   const formSubmit = useRef();
   const [done, setDone] = useState(false);
   const [error, setError] = useState("");
@@ -21,12 +20,11 @@ export default function Contact() {
   const [checkMessage, setMessageCheck] = useState("Message");
   const [checkEmail, setEmailCheck] = useState("Email");
 
-
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-    // register and emailJS is required to get this service to work => directs msgs to your email;
+      // register and emailJS is required to get this service to work => directs msgs to your email;
       .sendForm(
         "service_so66syo",
         "template_swdz7qv",
@@ -44,8 +42,8 @@ export default function Contact() {
       );
   };
 
-// Making sure user have all fields filled:
-// Name:
+  // Making sure user have all fields filled:
+  // Name:
   const nameSubmit = (e) => {
     e.preventDefault();
     !e.target.value.length
@@ -53,7 +51,7 @@ export default function Contact() {
       : setNameCheck("Name");
   };
 
-// Subject:
+  // Subject:
   const subjectSubmit = (e) => {
     e.preventDefault();
     !e.target.value.length
@@ -61,7 +59,7 @@ export default function Contact() {
       : setSubjectCheck("Subject");
   };
 
-// Message:
+  // Message:
   const submitMessage = (e) => {
     e.preventDefault();
     !e.target.value.length
@@ -69,7 +67,7 @@ export default function Contact() {
       : setMessageCheck("Insert Message Here");
   };
 
-// Email:
+  // Email:
   const submitEmail = (e) => {
     e.preventDefault();
     !e.target.value.length
@@ -77,7 +75,7 @@ export default function Contact() {
       : setEmailCheck("Email");
   };
 
-// Email Validation:
+  // Email Validation:
   const emailValidator = (e) => {
     e.preventDefault();
     isEmail(e.target.value)
@@ -87,7 +85,7 @@ export default function Contact() {
 
   return (
     <div>
-          <ContactSidebar />
+      <ContactSidebar />
       <section className="resume-section" id="awards">
         <div className="resume-section-content">
           <h2 className="mb-5">Contact Me:</h2>
